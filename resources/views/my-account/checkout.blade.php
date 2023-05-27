@@ -7,7 +7,54 @@
 
 @section('style')
 <link rel="stylesheet" href="/styles/checkout.css">
+<style>
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .add-addrs a:hover {
+	color: white;
+	background-color: #6A6E49;
+	border-color: #6A6E49;
+	text-decoration: none;
+    }
+    .buttons a:hover {
+        color: white;
+        background-color: #6A6E49;
+        border-color: #6A6E49;
+        text-decoration: none;
+    }
+    .buttons a{
+        font-family: "montserrat",Sans-serif;
+        color: black;
+        padding: 12px;
+        border: 1px solid black;
+        border-radius: 100px;
+        text-transform: uppercase;
+        letter-spacing: 0.92px;
+        line-height: 1.3em;
+        font-weight: 500;
+        font-size: 12px;
+        float: right;
+        margin: 0 25px;
+    }
 
+    .add-addrs a {
+	font-family: "montserrat",Sans-serif;
+	color: black;
+	padding: 12px;
+	border: 1px solid black;
+	border-radius: 100px;
+	text-transform: uppercase;
+	letter-spacing: 0.92px;
+	line-height: 1.3em;
+	font-weight: 500;
+	font-size: 12px;
+    
+}
+
+</style>
 @endsection
 
 @section('content')
@@ -23,7 +70,7 @@
             <div class="addresses my-4">
                 <h3 class="my-3">Shipping Details</h3>
                 <div class="row">
-                    @foreach ($addresses as  $addresse)
+                    @foreach ($addresses as $index => $addresse)
                     <div class="col-md-5 my-3 addrs">
                         <strong> {{ $addresse->first_name }}</strong> <strong>{{ $addresse->last_name }}</strong>
                         <p>phone : {{ $addresse->phone }}</p>
@@ -33,11 +80,27 @@
                         <p>zip code : {{ $addresse->zip_code }}</p>
                         <p>country : Morocco</p>
                         <input type="radio" name="addresse_id" id="" value="{{ $addresse->id }}" checked> <label for="">choose this address</label>
+                    
+                        <div class="buttons">
+                            <a href="{{ route('updateadresse',$addresse->id) }}">Update</a>
+                            @if ($index > 0 )
+                            <form action="{{ route('deleteaddresse',$addresse->id) }}" method="post">
+                                @csrf
+                                @method('POST')
+                                <a href="#"><input type="submit" value="Delete"></a>
+                            </form>
+                            @endif
+                        </div>
                     </div>
                     
                     @endforeach    
                    
                 </div>
+                @if (count($addresses) < 5)
+                <div class="add-addrs mt-5">
+                    <a href="{{ route('adaddresse') }}">Add New Address</a>
+                </div>
+                @endif
             </div>
 
 
