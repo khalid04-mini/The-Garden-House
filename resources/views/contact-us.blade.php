@@ -31,10 +31,10 @@
             <div class="email"><p>Email:info@thegardenhouse.com</p></div>
         </div>
         <div class="contact-form">
-            <form action="" method="post">
+            <form action="{{ route('sendEmail') }}" method="post">
                 @csrf
                 <div class="f-name mb-4">
-                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <input type="text" id="subject" name="subject" placeholder="subject">
                 </div>
                 <div class="f-email mb-4">
                     <input type="email" id="email" name="email" placeholder="Email Address">

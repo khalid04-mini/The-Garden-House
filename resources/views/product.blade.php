@@ -35,7 +35,7 @@
                     </div>
                     <div class="form-order">
                        <div class="cart-qty my-5">
-                        <input type="number" name="quantite" id="quantite" placeholder="1" min="1">
+                        <input type="number" name="quantite" id="quantite" placeholder="0" min="1">
                         <button id="btnadd" onclick="addproduct()">Add to cart</button>
                        </div>
                     </div>

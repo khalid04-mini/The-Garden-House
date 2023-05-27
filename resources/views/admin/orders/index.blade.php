@@ -23,7 +23,6 @@
                       </tr>
                     </thead>
                     <tbody>
-                       
                       @foreach ($orders as $key => $order)
                       <tr>
                         <td><strong>{{ $order->addresse->first_name }}</strong> <strong>{{ $order->addresse->last_name }}</strong></td> 
@@ -31,7 +30,13 @@
                         <td>{{ date('M j , Y',strtotime($order->created_at)) }}</td>
                         <td>{{ $order->total }} MAD</td>
                         <td>{{ $order->status }}</td>
-                        <td><a href="{{ route('order_detail',$order->id) }}">View</a></td>
+                        <td><a href="{{ route('order_detail',$order->id) }}">View</a>
+                        <form action="{{ route('destroyorder',$order->id) }}" method="post">
+                          @csrf
+                          @method('DELETE')
+                          <button class="btn btn-danger">delete</button>
+                        </form>
+                        </td>
                       </tr>
                       @endforeach
                     </tbody>

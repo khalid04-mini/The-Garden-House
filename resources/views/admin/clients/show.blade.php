@@ -24,18 +24,7 @@ Client
 
 @section('content')
 <div class="row mt-5">
-  <div class="switch">
-    <form action="{{ route('switchads',$user->id) }}" method="post">
-      @csrf
-      @method('PATCH')
-      <select name="is_admin" class="form-control" id="status">
-          <option value={{ 1 }}>admin</option>
-          <option value={{ 0 }}>client</option>
-      </select>
-     <br>
-     <button class="btn btn-primary" type="submit">switch</button>
-    </form>
-  </div>
+  
     <div class="addresses my-5">
         <h3>Addresses</h3>
     <table class="table">

@@ -31,16 +31,11 @@ class ClientAdminController extends Controller
 
     public function switch(User $user)
     {
-
-        // dd($user->id);
-        // dd(request('is_admin'));
         $attributes = [
             'is_admin' => request('is_admin'),
         ];
-        // dd($attributes);
         $user->update($attributes);
 
-        // dd('done');
         return redirect()->back();
     }
 }

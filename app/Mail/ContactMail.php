@@ -9,21 +9,25 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class OrderMail extends Mailable
+class ContactMail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $order;
+    public $attributes;
     /**
      * Create a new message instance.
      */
-    public function __construct($order)
+    public function __construct($attributes)
     {
         //
-        $this->order = $order;
+        $this->attributes = $attributes;
     }
 
+
+    /**
+     * Get the message content definition.
+     */
     public function build()
     {
-        return $this->subject('Order Confirmation')->view('orderConfirmed');
+        return $this->subject('Contact Mail')->view('contactMail');
     }
 }

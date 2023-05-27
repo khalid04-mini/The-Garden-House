@@ -1,34 +1,13 @@
-@extends('layouts.clientdash')
-
-
-
-@section('styledash')
-<link rel="stylesheet" href="/styles/view-order.css">
-<style>
-    .download a:hover {
-	color: white;
-	background-color: #6A6E49;
-	border-color: #6A6E49;
-	text-decoration: none;
-    }
-    .download a {
-	font-family: "montserrat",Sans-serif;
-	color: black;
-	padding: 12px;
-	border: 1px solid black;
-	border-radius: 100px;
-	text-transform: uppercase;
-	letter-spacing: 0.92px;
-	line-height: 1.3em;
-	font-weight: 500;
-	font-size: 12px;
-    }
-</style>
-@endsection
-
-
-
-@section('dashcontent')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
 
 <section class="my-5">
     {{-- <div class="container">
@@ -40,6 +19,7 @@
     </div>
     <div class="order-details my-5">
         <h2>Order Details</h2>
+        
         <div class="table-order-details">
             <table>
                 <thead>
@@ -70,23 +50,9 @@
                 </tbody>
             </table>
         </div>
-        <div class="download mt-5">
-            <a href="{{ route('pdf',$order->id) }}"><i class="bi bi-download"></i> Invoice </a>
-        </div>
     </div>
    </div>
 </section>
-@endsection
 
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
+</html>

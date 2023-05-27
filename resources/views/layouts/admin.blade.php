@@ -72,12 +72,7 @@
                 CORE
               </div>
             </li>
-            <li>
-              <a href="#" class="nav-link px-3 active">
-                <span class="me-2"><i class="bi bi-speedometer2"></i></span>
-                <span>Dashboard</span>
-              </a>
-            </li>
+            
             <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
             {{-- Products --}}
             <li>

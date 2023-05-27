@@ -6,12 +6,13 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\Order;
 use App\Mail\OrderMail;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Log\Logger;
-
 use App\Models\DetailOrder;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
+// use Barryvdh\DomPDF\PDF;
 
 
 // use App\Http\Controllers\PaymentController;
@@ -129,7 +130,7 @@ class ClientController extends Controller
             $data->product_id = request()->product_id[$x];
             $data->save();
         }
-
+        Mail::to(auth()->user()->email)->send(new OrderMail($order));
         return redirect()->route('vieworder', $orderId);
     }
 
@@ -144,7 +145,7 @@ class ClientController extends Controller
 
         // dd($order);
 
-        Mail::to(auth()->user()->email)->send(new OrderMail());
+
         return (view('my-account.orders')->with([
             'orders' => $client->orders,
             // 'details'=> Order::all()->detail_order
@@ -163,5 +164,16 @@ class ClientController extends Controller
             'order' => $order,
             'detail' => DetailOrder::where('order_id', $order->id)->get()
         ]);
+    }
+
+    public function pdf($orderId)
+    {
+        $order = Order::findOrFail($orderId);
+        $data = [
+            'order' => $order,
+        ];
+        // dd($data['order']);
+        $pdf = Pdf::loadView('my-account.pdf', $data);
+        return $pdf->download('invoice' . $order->id . '.pdf');
     }
 }

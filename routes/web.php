@@ -13,6 +13,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ClientAdminController;
 use App\Http\Controllers\ProductAdminController;
 use App\Http\Controllers\CategoryAdminController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ReturnCallBackController;
 
 /*
@@ -31,9 +32,8 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/contact-us', function () {
-    return view('contact-us');
-})->name('contactus');
+Route::get('/contact-us', [ContactController::class, 'index'])->name('contactus');
+Route::post('/contact-us', [ContactController::class, 'sendEmail'])->name('sendEmail');
 Route::get('/about-us', function () {
     return view('about-us');
 })->name('aboutus');
@@ -70,6 +70,7 @@ Route::prefix('my-account')->middleware('auth')->group(function () {
     Route::post('/checkout', [ClientController::class, 'check'])->name('check');
     Route::get('/orders', [ClientController::class, 'orders'])->name('orders');
     Route::get('/view-order/{order}', [ClientController::class, 'vieworder'])->name('vieworder');
+    Route::get('/pdf/{order}', [ClientController::class, 'pdf'])->name('pdf');
 });
 
 
@@ -112,7 +113,7 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     Route::prefix('clients')->group(function () {
         Route::get('/', [ClientAdminController::class, 'index'])->name('adminclients');
         Route::get('/client/{user}', [ClientAdminController::class, 'show'])->name('adminclient');
-        Route::patch('/client/{user}', [ClientAdminController::class, 'switch'])->name('switchads');
+        Route::post('/client/{user}', [ClientAdminController::class, 'switch'])->name('switchads');
     });
 });
 
