@@ -1,0 +1,65 @@
+.notice p{
+    font-family: "Montserrat",Sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+
+.order-details h2{
+    font-family: 'Italiana';
+    font-size: 24px;
+    font-weight: normal;
+    line-height:1.25em;
+}
+
+.table-order-details{
+    border: 1px solid #CED0BB;
+    padding: 20px;  
+}
+
+.table-order-details table {
+    width: 100%;
+}
+
+
+.table-order-details table thead th{
+    padding-bottom: 15px;
+    font-family: "Montserrat",Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.table-order-details table tbody{
+    font-family: "Montserrat",Sans-serif;
+    font-size: 14px;
+    /* font-weight: 600; */
+    line-height: 1.4em;
+}
+
+.table-order-details table tbody tr{
+    border-top: 1px solid #CED0BB;
+}
+.table-order-details table tbody td,th{
+    padding: 24px 0;
+}
+
+
+.product-name{
+    width: 75%;
+}
+
+.product-total{
+    text-align: end;
+}
+
+.product-name a{
+    text-decoration: none;
+    color: #6A6E49;
+    transition: 0.5s;
+}
+
+.product-name a:hover{
+    text-decoration: none;
+    color: black;
+}

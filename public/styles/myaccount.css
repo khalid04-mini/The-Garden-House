@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+
+.titleaccount{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleaccount h1{
+    font-family: 'Italiana';
+    font-size: 50px;
+}
+.titleaccount-signup h2, .titleaccount-login h2{
+    font-family: 'Italiana';
+}
+.lost-password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lost-password span a{
+    color:#6A6E49;
+    font-size: 12px;
+}
+.lost-password span a:hover{
+    color:black;
+    text-decoration: none;
+}
+.login , .register{
+    /* margin-top: 50px; */
+    border: 1px solid #CED0BB;
+    padding: 20px;
+    margin-top: 40px;
+}
+.login .field-icon {
+    position: relative;
+    z-index: 2;
+    bottom: 32px;
+    left: 95%;
+    cursor: pointer;
+    
+  }
+
+.login label, .register label{
+    /* margin-top: 50px; */
+    font-weight: 600;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.login input ,.register input{
+    width: 100%;
+    height: 43.6px;
+    border: 1px solid #CED0BB;
+}
+.login input:focus , .register input:focus{
+    outline: 0;
+    border-color: black;  
+}
+.login button, .register button{
+    width: 100%;
+height: 50.6px;
+border-radius: 100px;
+border: 1px solid black;
+background-color: white;
+transition: all 0.3s ease-in-out;
+}
+
+
+button:hover{
+    color:white;
+    background-color: #6A6E49;
+    border-color: #6A6E49;
+}
+
+.errors{
+    border: 1px solid #CED0BB;
+padding: 20px;
+}
+
+.errors p{
+    font-family: "montserrat",Sans-serif;
+font-size: 14px;
+line-height: 1.4em;
+font-weight: normal;
+}
+
+.errors p i{
+    color: red;
+
+}

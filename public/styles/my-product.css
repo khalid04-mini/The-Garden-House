@@ -1,0 +1,163 @@
+.container .product-info{
+    width: 90%;
+margin-left: 10%;
+}
+
+.image-product img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.cart-qty{
+    display: flex;
+}
+
+
+.cart-messg label{
+    /* margin-top: 50px; */
+    font-weight: 600;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.cart-messg input{
+    width: 100%;
+    height: 43.6px;
+    border: 1px solid #CED0BB;
+}
+.cart-messg input:hover{
+    outline: 0;
+    border-color: black;  
+}
+.cart-messg input:focus{
+    outline: 0;
+    border-color: black;  
+}
+
+.cart-qty input{
+    padding: 15px 12px;
+width: 70px;
+margin-right: 10px;
+}
+
+.cart-qty button{
+    width: 100%;
+border-radius: 100px;
+border: 1px solid black;
+background-color: white;
+transition: all 0.3s ease-in-out;
+}
+
+
+button:hover{
+    color:white;
+    background-color: #6A6E49;
+    border-color: #6A6E49;
+}
+
+.product-name h3{
+    font-family: 'Italiana';
+    font-size: 36px;
+    font-weight: normal;
+    line-height:1.2em;
+}
+
+.product-info {
+    font-family: 'Montserrat';
+}
+
+.product-price{
+    font-size: 18px;
+}
+
+.product-description p{
+    color: #6A6E49;
+    line-height: 1.5em;
+}
+
+
+
+.ourstore  .container{
+    /* height: 650px; */
+    /* background-color: ; */
+    margin-bottom: 20px;
+}
+
+.ourstore .container .image{
+    height: 650px;
+    background-color: #6A6E49;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ourstore .container .image .cont {
+    width:80%;
+    height: 85%;
+    background-image: url('/images/fleuriste.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.ourstore .container  .store {
+    background-color: #F1EFEB;
+    /*     background-color: #F9EBE0;
+ */
+}
+
+
+.ourstore .container .store .cont{
+    /* padding-top: 150px; */
+    /* padding-left: 65px; */
+    width: 90%;
+    font-size: 15px;
+    margin-top: 100px;
+font-family: "Montserrat", serif;
+}
+.ourstore .container .store .cont p{
+    font-size: 15px;
+}
+.ourstore .container .store .cont h1{
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Italiana", serif;
+}
+.ourstore .container .store .cont .row{
+    margin-top: 65px;
+}
+.ourstore .container .store .cont .second{
+    margin-top: 45px;
+}
+
+
+.ourstore .container .store .cont .map{
+    height: 50px;
+    margin-left: 0px;
+    margin-top: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    border-radius: 100px;
+    letter-spacing: 0.92px;
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.ourstore .container .store .cont .map:hover{
+    color: white;
+    background-color:  #6A6E49;
+    border-color:  #6A6E49;
+    cursor: pointer;
+}
+
+/* end ourstore and image */

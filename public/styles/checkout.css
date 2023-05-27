@@ -1,0 +1,130 @@
+.addresses{
+    padding: 20px;
+}
+
+.addresses p{
+    font-family: "montserrat",Sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+
+.addrs{
+    border: 1px solid #CED0BB;
+    padding: 20px;
+    margin: 0 auto;
+}
+.addrs p{
+    padding: 0;
+    margin: 0 auto;
+}
+
+.yourorder{
+    padding: 20px;
+    border: 1px solid #CED0BB;
+
+}
+
+.yourorder .product , .total_prix{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*  */
+
+h3{
+    font-family: 'Italiana';
+    font-size: 24px;
+    font-weight: normal;
+    line-height:1.25em;
+}
+
+.product .name,.privacy p,.shipping-method label{
+    font-family: "Montserrat",Sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+
+label{
+    font-family: "Montserrat",Sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+
+.tit{
+    font-family: "Montserrat",Sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: 600; 
+}
+
+.product input{
+    border: none;
+    padding: 8px 0;
+}
+
+.prixtotal input{
+    border: none;
+    padding: 8px 0;
+    width: 45%;
+}
+.product input:hover{
+    cursor: default ;
+}
+.prixtotal input:hover{
+    cursor: default ;
+    width: 45%;
+}
+.product input:focus-visible{
+    border: none;
+    outline: none;
+}
+.prixtotal input:focus-visible{
+    border: none;
+    outline: none;
+}
+.price input{
+    width: 50%;
+}
+
+.product .price span{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.product .price span input{
+    width: 45%;
+}
+
+.prixtotal{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.place-order button{
+    width: 30%;
+height: 50.6px;
+border-radius: 100px;
+border: 1px solid black;
+background-color: white;
+transition: all 0.3s ease-in-out;
+}
+
+.place-order button:hover{
+    color:white;
+    background-color: #6A6E49;
+    border-color: #6A6E49;
+}
+
+
+.place-order{
+    display: flex;
+justify-content: end;
+}

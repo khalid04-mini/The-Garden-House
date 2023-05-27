@@ -1,0 +1,268 @@
+
+/* 
+#EDF1D6
+#9DC08B
+#338873
+#609966
+#40513B
+#0c5b47
+
+
+screen 955px
+*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;600;700&family=Shantell+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+body{
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+}
+/* ////////////////////////////// */
+
+
+
+/* start header */
+
+
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    /* position: absolute; */
+    z-index: 100;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+}
+
+
+/* start logo */
+
+.logo{
+    display: flex;
+    margin-left: 10px;
+    position: sticky;
+}
+.logo img{
+    border-style: none;
+    height: 40px;
+}
+
+
+/* end logo */
+
+/* start links */
+
+.head .links {
+    display: flex;
+    align-items: center;
+    /* margin-left: 100%; */
+}
+
+.head .links  ul#list li{
+    display: inline;
+    padding: 0px 16px 0 16px;
+    margin-right: 20px;
+    /* font-size: 17px; */
+}
+
+ul#list li a.icon{
+    position: absolute;
+}
+ul#list li a.icon:hover  #cart{
+    display: block;
+}
+ul#list li span.items{
+    position: relative;
+    left: 14px;
+    top: 5px;
+    font-size: 10px;
+    background: #6A6E49;
+    color: white;
+    padding: 0px 4px;
+    border-radius: 100%;
+}
+
+
+
+
+ul#list li #cart {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	/* top: 20%; */
+	left: 74.7%;
+	background: white;
+	box-shadow: 0px 1px 10px -6px hsl(0, 0%, 8%);
+	width: 285px;
+	min-height: 105px;
+	padding: 30px;
+    margin-top: 1%;
+    color: #6A6E49;
+}
+ul#list li #cart p{
+    /* display: none; */
+    color: #6A6E49;
+    font-size: 16px;
+}
+
+
+
+
+ul#list li #cart .total{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul#list li #cart .item h6,ul#list li #cart .item p{
+   margin: 0;
+}
+
+
+ul#list li a{
+    color:#6A6E49;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+.head .links ul#list li a::after {
+    content: "";
+    padding: 0 10px 0 10px;
+    position: absolute;
+    display: block;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left; /* Alternatives : remove this line or "transform-origin: right;" */
+    background: #6A6E49;
+    transition: transform 0.3s ease-out;
+}
+.head .links  a:hover::after {
+    transform: scaleX(1);
+}
+.head .links a.lign::after {
+    transform: scaleX(1);
+}
+.head .links ul#list li i{
+    color:#6A6E49;
+}
+.head .links ul#list li a:hover{
+    text-decoration: none;
+}
+
+.head .links ul#list li.carticon{
+    padding: 20px;
+
+}
+#cart ul li .item .titleproduct{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ul#list li #cart .cartbuttns{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul#list li #cart .cartbuttns button{
+    width: 90%;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid black;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+ul#list li #cart .cartbuttns button:hover{
+    color:white;
+    background-color: #6A6E49;
+    border-color: #6A6E49;
+}
+ul#list li #cart .cartbuttns button:hover span{
+    color:white;
+
+}
+/* end links */
+
+
+
+
+/* start footer */
+.foot{
+   
+bottom: 0;
+width: 100%;
+position: relative;
+bottom: 0;
+}
+
+
+.footer{
+    margin-top: 200px;
+    background-color: #F1EFEB;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .container{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Montserrat", serif;
+}
+.footer .container ul li a{
+    color: black;
+}
+.footer .container ul li a:hover{
+    color: black;
+    text-decoration: none;
+}
+.footer .container .title h1{
+    color:  #6A6E49;
+}
+.footer .container .title,.address,.contact{
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+.footer .container .links{
+    font-family: 'Italiana';
+    font-size: 25px;
+    display: flex;
+}
+.footer .container .links ul{
+    margin-left: -25px;
+}
+
+.footer .container .social{
+    margin-top: 20px;
+
+}
+
+
+.footer .container .social span{
+    padding-right: 20px;
+}
+.footer .container .social span a{
+    color :black ;
+}
+
+.footer .container .social span a i{
+    font-size: 20px;
+}
+
+/*  end footer */

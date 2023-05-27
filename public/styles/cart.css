@@ -1,0 +1,138 @@
+.cardcon{
+    height: 500px;
+}
+.cardcon h3{
+    text-align: center;
+    font-family: 'Italiana';
+}
+
+/* table start */
+.table-cart{
+    width: 100%;
+
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.table-cart thead{
+    height: 59px;
+    color: #6A6A6A;
+}
+.table-cart tbody tr{
+    height: 87px;
+    font-weight: 500;
+}
+.table-cart tbody p{
+    margin-bottom: 0;
+}
+.table-cart tbody button{
+    background: white;
+    border: none;
+    width: 50px;
+}
+.table-cart tbody td .quant{
+    display: flex;
+    align-items: center;
+}
+.table-cart tbody td .quant span{
+    display: flex;
+    align-items: center;
+}
+
+.table-cart tbody tr span{
+    height: 87px;
+    font-size: 16px;
+}
+.table-cart tbody tr td a i{
+    color: black;
+    font-size: 14px;
+}
+
+/* end table */
+
+
+
+
+.cart{
+    border: 1px solid #CED0BB;
+    padding: 20px;
+
+}
+
+.cart p{
+    font-family: "montserrat",Sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+
+.cart p a{
+    font-family: "montserrat",Sans-serif;
+    color:black;
+   padding: 12px;
+   border: 1px solid black;
+   border-radius: 100px;
+   text-transform: uppercase;
+   letter-spacing: 0.92px;
+   line-height: 1.3em;
+   font-weight: 500;
+   font-size: 12px;
+   float: right;
+}
+.cart p a:hover{
+    color:white;
+    background-color: #6A6E49;
+    border-color: #6A6E49;
+    text-decoration: none;
+}
+
+
+/* total table */
+.cart-total{
+    width: 100%;
+}
+.cart-total p{
+    margin-bottom: 0;
+    color: #6A6E49;
+    font-size: 16px;
+    font-weight: 600;
+}
+.title-total{
+    width: 20%;
+}
+/* end total table */
+
+.proceed-checkout {
+    display: flex;
+
+    justify-content: end;
+}
+
+.proceed-checkout button{
+    width: 50%;
+height: 50.6px;
+border-radius: 100px;
+border: 1px solid black;
+background-color: white;
+transition: all 0.3s ease-in-out;
+}
+
+
+.proceed-checkout button:hover{
+    color:white;
+    background-color: #6A6E49;
+    border-color: #6A6E49;
+}
+
+.proceed-checkout button a{
+    color: black;
+}
+.proceed-checkout button:hover a{
+    color: white;
+    text-decoration: none;
+}
+
+.proceed-checkout a:hover {
+    color: white;
+    text-decoration: none;
+}

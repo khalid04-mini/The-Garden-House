@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1EFEB;
+    height: 60px;
+}
+
+.list li{
+    padding: 30px;
+    width: 173px;
+    text-align: center;
+}
+
+.list li a{
+    font-family: "montserrat",Sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: black;
+}
+
+.list li a:hover{
+    text-decoration: none;
+    color: #6A6E49;
+    
+}
+
+.dashboard{
+    border: 1px solid #CED0BB;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.dashboard p{
+    font-family: "montserrat",Sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+
+.dashboard p a{
+    color: #6A6E49;
+}
+
+.dashboard p a:hover{
+    color: black;
+    text-decoration: none;
+}
+.hello{
+    display: flex;
+align-items: center;
+}
+
+.logout{
+    margin-bottom: 1rem;
+}
+.logout a input{
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    font-family: "montserrat",Sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: normal;
+    color: #6A6E49;
+}
+
+
+.title-page .titl-page{
+    text-align: center;
+font-family: 'Italiana';
+
+}
+.title-page .titl-page h1{
+    font-size: 54px;
+}
+
+
+.list a input{
+    background-color: transparent;
+    border: none;
+    font-family: "montserrat",Sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: black;
+}

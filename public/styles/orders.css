@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+
+.no-orders{
+    border: 1px solid #CED0BB;
+    padding: 20px;
+   
+}
+
+.no-orders p{
+    font-family: "montserrat",Sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+
+.no-orders p a{
+    font-family: "montserrat",Sans-serif;
+    color:black;
+   padding: 12px;
+   border: 1px solid black;
+   border-radius: 100px;
+   text-transform: uppercase;
+   letter-spacing: 0.92px;
+   line-height: 1.3em;
+   font-weight: 500;
+   font-size: 12px;
+   float: right;
+}
+.no-orders p a:hover{
+    color:white;
+    background-color: #6A6E49;
+    border-color: #6A6E49;
+    text-decoration: none;
+}
+
+
+.orders{
+    border: 1px solid #CED0BB;
+    padding: 20px;  
+}
+
+.orders table {
+    width: 100%;
+}
+
+
+.orders table thead th{
+    padding-bottom: 15px;
+    font-family: "Montserrat",Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.orders table tbody tr{
+    border-top: 1px solid #CED0BB;
+}
+.orders table tbody td{
+    padding: 24px 0;
+    padding-bottom: 15px;
+    font-family: "Montserrat",Sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4em;
+}
+
+.orders table tbody td button{
+    border: 1px solid   black;
+    border-radius: 20px;
+    background: white;
+    padding: 12px 21px;
+}
+.orders table tbody td button a{
+    color: black;
+    text-decoration: none;
+}
+
+.orders table tbody td button:hover{
+    border-color: #6A6E49;
+    background: #6A6E49;
+    
+}
+
+.orders table tbody td button:hover a{
+    color: white;
+    
+}
+
+.orders table tbody th{
+    padding-bottom: 15px;
+    padding: 24px 0;
+}
+
+.orders table .order_th,.actions_th{
+    width: 15%;
+}
+
+.orders table .total_th{
+    width: 25%;
+}

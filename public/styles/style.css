@@ -1,0 +1,435 @@
+
+/* 
+#EDF1D6
+#9DC08B
+#338873
+#609966
+#40513B
+#0c5b47
+
+
+screen 955px
+*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;600;700&family=Shantell+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+body{
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+}
+/* ////////////////////////////// */
+
+
+
+/* start header */
+
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    position: absolute;
+    z-index: 100;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    background-color:transparent;
+    position: absolute;
+    z-index: 100;
+    height: 70px;
+    transition: 0.4s ease-in-out;
+}
+
+.page-header-fix{
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    position: fixed;
+    z-index: 100;
+    height: 70px;
+    transition: 0.4s ease-in-out;
+}
+
+/* start logo */
+
+.logo{
+    display: flex;
+    margin-left: 10px;
+    position: sticky;
+}
+.logo img{
+    border-style: none;
+    height: 40px;
+}
+
+
+/* end logo */
+
+/* start links */
+
+.head .links {
+    display: flex;
+    align-items: center;
+    /* margin-left: 100%; */
+}
+.head .links  ul#list li{
+    display: inline;
+    padding: 0 19px 0 19px;
+    margin-right: 20px;
+    /* font-size: 17px; */
+}
+ul#list li a{
+    color:#6A6E49;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+.head .links a::after {
+    content: "";
+    padding: 0 10px 0 10px;
+    position: absolute;
+    display: block;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left; /* Alternatives : remove this line or "transform-origin: right;" */
+    background: #6A6E49;
+    transition: transform 0.3s ease-out;
+}
+.head .links  a:hover::after {
+    transform: scaleX(1);
+}
+.head .links a.lign::after {
+    transform: scaleX(1);
+}
+ul#list li i{
+    color:#0c5b47;
+}
+ul#list li a:hover{
+    text-decoration: none;
+}
+/* end links */
+
+
+/* start background */
+
+.home {
+    position: relative;
+
+}
+.home img{
+    width: 100%;
+    height: 690px;
+    
+}
+
+.home .slider-wrapper {
+    width: 100%;
+    height: 690px;
+	position: relative;
+}
+
+.home .slide {
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 3s ease-in-out;
+}
+
+.home .slider-wrapper > .slide:first-child {
+	opacity: 1;
+}
+
+/* end background */
+
+/* end header */
+
+
+
+/* start welcome div */
+.welcome{
+    position: relative;
+}
+
+.welc-img .image{
+    position: absolute;
+    margin-bottom: 30px;
+    right: 0;
+    height: 360px;
+    width: 550px;
+    top: 525px;
+}
+.welc-img .image img{
+
+height: 100%;
+width: 100%;
+}
+
+.welcome{
+    height: 800px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.welcome-img{
+    /* background-image: url(images/olga-thelavart-HZm2XR0whdw-unsplash.jpg); */
+    width: 990px;
+    height: 562px;
+    background-color: #F1EFEB;
+    background-size: cover;
+    /* border-radius: 20px; */
+    /* font-family: 'Shantell Sans', sans-serif; */
+    
+}
+.welcome-content{
+    color: #0c5b47;
+    width: 495px;
+    height: 300px;
+    margin: 100px auto;
+    text-align: center;
+    
+}
+
+.welcome-content p{
+    font-size: 20px;
+}
+
+.welcome-content h6{
+    margin-top: 18px;
+    font-family: 'Crimson Text', serif;
+}
+
+
+/* end welcome div */
+
+
+.discover{
+    background-image: url(/images/main-home-img-7-2.jpg);
+    min-height: 290px;
+    margin-bottom: 100px;
+    background-size: contain;
+    margin-top: 150px;
+}
+
+
+.my-card{
+
+    margin-top: 110px;
+    margin-bottom: 110px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.my-card .inside-card{
+    height: 330px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.my-card .inside-card img{
+    width: 100%;
+    height: 100%;
+    position : absolute;
+    z-index: 1;
+}
+
+.my-card .inside-card .cardi{
+    width: 75%;
+    height: 30%;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    top: 60%;
+    left: 12%;
+    text-align: center;
+    display: flex;
+align-content: center;
+justify-content: center;
+align-items: center;
+}
+
+.my-card .inside-card .cardi h5{
+    color: #0c5b47;
+    font-family: "Lato", sans-serif;
+}
+
+
+.my-card .inside-card .cardi h6{
+    color: #338873;
+    font-size: 18px;
+    font-family: "Crismon Text", serif;
+    font-style: italic;
+}
+
+
+/* .my-card  #flower{
+    background-image: url('images/photo-1648675636355-6f9bb1f905d2.avif');
+
+} */
+.ourstore  .container{
+    /* height: 650px; */
+    /* background-color: ; */
+    margin-bottom: 20px;
+}
+
+.ourstore .container .image{
+    height: 650px;
+    background-color: #6A6E49;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ourstore .container .image .cont {
+    width:80%;
+    height: 85%;
+    background-image: url('/images/shop.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.ourstore .container  .store {
+    background-color: #F1EFEB;
+    /*     background-color: #F9EBE0;
+ */
+}
+
+
+.ourstore .container .store .cont{
+    /* padding-top: 150px; */
+    /* padding-left: 65px; */
+    width: 90%;
+    font-size: 15px;
+    margin-top: 100px;
+font-family: "Montserrat", serif;
+}
+.ourstore .container .store .cont p{
+    font-size: 15px;
+}
+.ourstore .container .store .cont h1{
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Italiana", serif;
+}
+.ourstore .container .store .cont .row{
+    margin-top: 65px;
+}
+.ourstore .container .store .cont .second{
+    margin-top: 45px;
+}
+
+
+.ourstore .container .store .cont .map{
+    height: 50px;
+    margin-left: 0px;
+    margin-top: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    border-radius: 100px;
+    letter-spacing: 0.92px;
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.ourstore .container .store .cont .map:hover{
+    color: white;
+    background-color:  #6A6E49;
+    border-color:  #6A6E49;
+    cursor: pointer;
+}
+
+/* end ourstore and image */
+
+
+/* start footer */
+.footer{
+    margin-top: 200px;
+    background-color: #F1EFEB;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .container{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Montserrat", serif;
+}
+.footer .container ul li a{
+    color: black;
+}
+.footer .container ul li a:hover{
+    color: black;
+    text-decoration: none;
+}
+.footer .container .title h1{
+    color:  #6A6E49;
+}
+.footer .container .title,.address,.contact{
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+.footer .container .links{
+    font-family: 'Italiana';
+    font-size: 25px;
+    display: flex;
+}
+.footer .container .links ul{
+    margin-left: -25px;
+}
+
+.footer .container .social{
+    margin-top: 20px;
+
+}
+
+
+.footer .container .social span{
+    padding-right: 20px;
+}
+.footer .container .social span a{
+    color :black ;
+}
+
+.footer .container .social span a i{
+    font-size: 20px;
+}
+
+/*  end footer */
+
+
+@media screen {
+    
+}

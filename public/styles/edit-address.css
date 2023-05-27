@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1EFEB;
+    height: 60px;
+}
+
+.list li{
+    padding: 30px;
+    width: 173px;
+    text-align: center;
+}
+
+.list li a{
+    font-family: "montserrat",Sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: black;
+}
+
+.list li a:hover{
+    text-decoration: none;
+    color: #6A6E49;
+    
+}
+
+.addresses{
+   
+    padding: 20px;
+   
+}
+
+.addresses p{
+    font-family: "montserrat",Sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+.addrs{
+    border: 1px solid #CED0BB;
+    padding: 20px;
+}
+.addrs p{
+    padding: 0;
+}
+.buttons{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+.buttons  a{
+    font-family: "montserrat",Sans-serif;
+    color:black;
+   padding: 12px;
+   border: 1px solid black;
+   border-radius: 100px;
+   text-transform: uppercase;
+   letter-spacing: 0.92px;
+   line-height: 1.3em;
+   font-weight: 500;
+   font-size: 12px;
+   float: right;
+   margin: 0 25px;
+}
+.buttons  a:hover{
+    color:white;
+    background-color: #6A6E49;
+    border-color: #6A6E49;
+    text-decoration: none;
+}
+.add-addrs a{
+    font-family: "montserrat",Sans-serif;
+    color:black;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.92px;
+    line-height: 1.3em;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.add-addrs  a:hover{
+    color:white;
+    background-color: #6A6E49;
+    border-color: #6A6E49;
+    text-decoration: none;
+}
+
+/* .orders p a{
+    color:black;
+   padding: 12px;
+   border: 1px solid black;
+   border-radius: 100px;
+   text-transform: uppercase;
+   letter-spacing: 0.92px;
+   line-height: 1.3em;
+   font-weight: 500;
+   font-size: 12px;
+   float: right;
+}
+.orders p a:hover{
+    color:white;
+    background-color: #6A6E49;
+    border-color: #6A6E49;
+    text-decoration: none;
+} */

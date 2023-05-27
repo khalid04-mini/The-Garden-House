@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+
+
+.filter h1{
+    font-family: 'Italiana';
+}
+
+.search{
+    display: flex;
+    justify-content: space-around;
+}
+
+.search input{
+    width: 70%;
+    height: 35px;
+    border: 1px solid #CED0BB;
+    
+}
+.search input:focus{
+    outline: 0;
+    border-color: black;  
+}
+.search button{
+    height: 35px;
+    width: 20%;
+    margin-left: 10px;
+    border: 1px solid #CED0BB;
+    background-color: white;
+}
+.search button i{
+   color: #6A6E49;
+}
+
+.result{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    font-family: 'Montserrat', sans-serif;
+}
+.result p{
+    color: #6A6A6A;
+    font-size: 14px;
+    padding-top: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+.ordering{
+    color: #6A6A6A;
+    background-color: white;
+    font-size: 12px;
+    padding: 12px 15px;
+    border: 1px solid #F1EFEB;
+    font-weight: 400;
+    line-height: 1.5em;
+    width: 250px;
+    position: relative;
+}
+
+.ordering option{
+    font-size: 12px;
+    padding: 5px 15px;    
+}
+.ordering ul{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-product {
+    border: 1px solid ;
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    padding: 0 0 5px;
+    border-color: #F1EFEB;
+    height: 355px;
+    overflow: hidden;
+}
+
+.card-product img{
+    height: 250px;
+    width: 100%;
+    display: block;
+    margin: 0 0 1em;
+    box-shadow: none;
+    transition: transform .4s cubic-bezier(0,0,.2,1) ;
+    
+}
+
+.card-product img:hover{
+    transform: scale(1.08);
+    
+}
+.card-product .info{
+    margin-top: 10px;
+    padding: 0 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.card-product .info a{
+    color: black;
+    transition: 3s ease-in-out;
+    
+}
+
+.card-product .info h2{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-product .info span{
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1em;
+}
+
+.filter{
+    font-size: 12px;
+}
+.filter .category-items{
+    display: grid;
+    margin-top: 10px;
+}
+
+.filter .category-items label{
+    font-size: 12px;
+    line-height: 1.5em;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.filter h3{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 0.9px;
+    font-family: 'Montserrat', sans-serif;
+}
+.filter .price, .category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.filter .price-range, .category-items{
+    display: none;
+}
+
+.filter .category-items{
+    display: none;
+}
+
+.slider{
+    margin: 20px 0;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    background: #CED0BB;
+}
+.slider .progress{
+    height: 5px;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+    /* border-radius: 5px; */
+    background-color: #6A6E49;
+}
+
+.range-input{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.range-input input{
+    height: 45px;
+    border: 1px solid #CED0BB;
+    width: 35%;
+    background: none;
+    appearance: none;
+}
+
+
+.range-input  input:focus{
+    outline: 0;
+    border-color: black;  
+}
+
+
+
+.filter .price-span .field{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+    color: #6A6A6A;
+    padding-top: 10px;
+
+}
+
+
+.not-found{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    height: 500px;
+}
+
+
+.not-found p{
+    color: #6A6A6A;
+    font-size: 16px;
+    padding-top: 12px;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+
+
+
+

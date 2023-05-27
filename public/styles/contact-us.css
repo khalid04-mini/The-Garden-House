@@ -1,0 +1,86 @@
+.image{
+    background-image: url("/images/contact.png");
+    height: 450px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.my-contact{
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}
+.title h2{
+    font-family: 'Italiana';
+    font-size: 46px;
+}
+.paragraph,.info p{
+    font-size: 12px;
+    font-family: "Montserrat", serif;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.phone{
+    border-right: 1px solid #CED0BB;
+
+}
+.phone,.email{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.phone p{
+    text-align: start;
+}
+.email p{
+    text-align: end;
+    margin-left: 10%;
+}
+.contact-form input,textarea{
+width: 100%;
+height: 43.6px;
+border: 1px solid #CED0BB;
+padding: 6px 20px;
+}
+.contact-form input::placeholder{
+font-size: 12px;
+font-family: "Montserrat", serif;
+}
+.contact-form textarea::placeholder{
+font-size: 12px;
+font-family: "Montserrat", serif;
+}
+.contact-form textarea{
+    height: 110px;
+}
+.contact-form input:focus{
+outline: 0;
+border-color: black;  
+}
+.contact-form textarea:focus{
+outline: 0;
+border-color: black;  
+}
+.phone a{
+    all: unset
+}
+button{
+width: 100%;
+height: 50.6px;
+border-radius: 100px;
+border: 1px solid black;
+background-color: white;
+transition: all 0.3s ease-in-out;
+}
+
+
+button:hover{
+    color:white;
+    background-color: #6A6E49;
+    border-color: #6A6E49;
+}
