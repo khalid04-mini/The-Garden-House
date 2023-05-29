@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
-use Illuminate\Support\Facades\Validator;
 use function Termwind\render;
+use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
 
 class CategoryAdminController extends Controller
 {
@@ -33,12 +34,15 @@ class CategoryAdminController extends Controller
 
     public function store(Category $category)
     {
-        $attributes = request()->validate([
+        request()->validate([
             'name' => ['required', Rule::unique('categories', 'name')],
             'slug' => ['required', Rule::unique('categories', 'slug')]
         ]);
+        $name = request('name');
+        $slug = request('slug');
+        DB::statement('CALL addcat(?, ?)', [$name, $slug]);
 
-        Category::create($attributes);
+        // Category::create($attributes);
         return redirect()->back();
     }
     // public function store(Request $request)
